@@ -32,3 +32,9 @@ Since the `.env` file is ignored for security, you need to create your own:
    ```text
    SUPABASE_URL = "your_project_url_here"
    SUPABASE_KEY = "your_anon_key_here"
+
+
+## 🚀 How to Run Locally
+1. Clone the repo.
+2. Add your `.env` file with Supabase keys.
+3. Run `streamlit run app.py`.
