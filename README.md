@@ -1,40 +1,31 @@
 # 🎓 TutorBuddy - Tuition Management System
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://studentmanager.streamlit.app/)
+
 **TutorBuddy** is a lightweight Full-Stack MVP designed for tuition teachers to manage student records, track fee payments, and generate professional PDF receipts instantly.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
+Access the application here: [studentmanager.streamlit.app](https://studentmanager.streamlit.app/)
+
+## ✨ Key Features
 * **Student Management**: Register students with parent details and class info.
 * **Real-time Dashboard**: Track 'Collected' vs 'Pending' revenue at a glance.
 * **Dynamic Search**: Instantly filter students by name.
-* **PDF Receipt Generation**: Download professional receipts for paid fees.
-* **Cloud Database**: Powered by Supabase for reliable data storage.
+* **PDF Receipt Generation**: Download professional receipts for paid fees using `fpdf2`.
+* **Cloud Database**: Powered by Supabase for reliable PostgreSQL storage.
 
 ## 🛠️ Tech Stack
 * **Frontend**: Streamlit
 * **Backend/Database**: Supabase (PostgreSQL)
-* **PDF Engine**: fpdf2
 * **Environment Management**: Python `uv`
 
-## 📦 Installation & Setup
+## 📦 Local Setup
+1. Clone the repo: `git clone https://github.com/Bappaditya-kuilya/StudentManager.git`
+2. Install dependencies: `uv pip install -r requirements.txt`
+3. Add your `.env` file with `SUPABASE_URL` and `SUPABASE_KEY`.
+4. Run: `streamlit run app.py`
 
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/Bappaditya-kuilya/Studentmanager.git](https://github.com/Bappaditya-kuilya/Studentmanager.git)
-   cd Studentmanager
-
-
-### 🔑 Environment Setup
-Since the `.env` file is ignored for security, you need to create your own:
-1. Create a file named `.env` in the root folder.
-2. Add the following keys (get these from your Supabase Dashboard):
-   ```text
-   SUPABASE_URL = "your_project_url_here"
-   SUPABASE_KEY = "your_anon_key_here"
-
-
-## 🚀 How to Run Locally
-1. Clone the repo.
-2. Add your `.env` file with Supabase keys.
-3. Run `streamlit run app.py`.
+---
+*Developed by [Bappaditya Kuilya](https://github.com/Bappaditya-kuilya)*
